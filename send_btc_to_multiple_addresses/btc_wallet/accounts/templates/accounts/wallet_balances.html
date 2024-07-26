@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Balances</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1.5em 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin-top: 80px;
+
+            margin: 0 auto;
+            padding: 2em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            margin-bottom: 1.5em;
+        }
+        .balance {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 5px;
+            margin-bottom: 1em;
+            display: flex;
+            justify-content: space-between;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bitcoin Wallet App</h1>
+    </header>
+    <div class="container">
+        <h2>Wallet Balances</h2>
+        <div class="balance">
+            <p><strong>Available Balance:</strong></p>
+            <p>{{ available_balance }} BTC</p>
+        </div>
+        <div class="balance">
+            <p><strong>Pending Balance:</strong></p>
+            <p>{{ pending_balance }} BTC</p>
+        </div>
+        {% comment %} <div class="balance">
+            <p><strong>Immature Balance:</strong></p>
+            <p>{{ immature_balance }} BTC</p>
+        </div> {% endcomment %}
+        <a href="{% url 'home' %}">Back to Home</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bitcoin Wallet App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
