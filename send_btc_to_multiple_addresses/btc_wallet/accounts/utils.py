@@ -1,8 +1,8 @@
 from bitcoinrpc.authproxy import AuthServiceProxy ,JSONRPCException
 from decimal import Decimal, InvalidOperation
 
-rpc_user = 'jowan'
-rpc_password = '123456789'
+rpc_user = 'rpcname'
+rpc_password = 'rpcpassword'
 rpc_port = 18443  # Default port for regtest
 def create_legacy_wallet(wallet_name):
 

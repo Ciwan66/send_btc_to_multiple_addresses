@@ -24,10 +24,6 @@ SECRET_KEY = 'django-insecure-^i0^zn7my!&wl%rv+57mm6vads@_r^pebe^yvl%iv7&w035g#t
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-BITCOIN_RPC_USER = 'jowan'
-BITCOIN_RPC_PASSWORD = '123456789'
-BITCOIN_RPC_HOST = '127.0.0.1'
-BITCOIN_RPC_PORT = 18443  # Regtest port
 
 ALLOWED_HOSTS = []
 
